@@ -392,7 +392,7 @@ public class MapboxNavigation implements ServiceConnection {
       MapboxMetricsReporter.disable();
       navigationService.stopSelf();
       navigationEventDispatcher.onNavigationEvent(false);
-      AccountsManagerImpl.getInstance(applicationContext).endNavigation();
+      AccountsManager.getInstance(applicationContext).endNavigation();
     }
   }
 

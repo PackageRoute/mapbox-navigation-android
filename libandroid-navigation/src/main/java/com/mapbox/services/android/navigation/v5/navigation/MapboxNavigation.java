@@ -15,8 +15,8 @@ import com.mapbox.android.core.location.LocationEngineProvider;
 import com.mapbox.android.core.location.LocationEngineRequest;
 import com.mapbox.api.directions.v5.models.DirectionsRoute;
 import com.mapbox.navigator.Navigator;
-import com.mapbox.services.android.navigation.v5.accounts.MapboxNavigationAccounts;
 import com.mapbox.services.android.navigation.BuildConfig;
+import com.mapbox.services.android.navigation.v5.internal.accounts.MapboxNavigationAccounts;
 import com.mapbox.services.android.navigation.v5.internal.navigation.MapboxNavigator;
 import com.mapbox.services.android.navigation.v5.internal.navigation.NavigationEngineFactory;
 import com.mapbox.services.android.navigation.v5.internal.navigation.NavigationEventDispatcher;
@@ -44,6 +44,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import timber.log.Timber;
 
 import static com.mapbox.services.android.navigation.v5.navigation.NavigationConstants.BANNER_INSTRUCTION_MILESTONE_ID;
 import static com.mapbox.services.android.navigation.v5.navigation.NavigationConstants.NON_NULL_APPLICATION_CONTEXT_REQUIRED;

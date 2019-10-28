@@ -53,9 +53,6 @@ class MapboxOffboardRouter(
         })
     }
 
-    override fun getRoute(origin: Point, waypoints: List<Point>, listener: Router.RouteListener) {
-    }
-
     override fun cancel() {
         navigationRoute?.cancelCall()
         navigationRoute = null

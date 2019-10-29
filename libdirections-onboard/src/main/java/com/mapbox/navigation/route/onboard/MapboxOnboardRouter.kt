@@ -4,6 +4,7 @@ import com.mapbox.annotation.navigation.module.MapboxNavigationModule
 import com.mapbox.annotation.navigation.module.MapboxNavigationModuleType
 import com.mapbox.geojson.Point
 import com.mapbox.navigation.base.route.Router
+import com.mapbox.navigation.base.route.model.Route
 import com.mapbox.navigation.navigator.MapboxNativeNavigator
 
 @MapboxNavigationModule(MapboxNavigationModuleType.OnboardRouter, skipConfiguration = true)

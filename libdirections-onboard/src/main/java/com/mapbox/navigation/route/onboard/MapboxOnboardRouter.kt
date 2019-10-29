@@ -19,6 +19,15 @@ class MapboxOnboardRouter(private val navigator: MapboxNativeNavigator) : Router
         TODO("not implemented") // To change body of created functions use File | Settings | File Templates.
     }
 
+    override fun getRoute(
+        origin: Point,
+        waypoints: List<Point>?,
+        destination: Point,
+        listener: Router.RouteListener
+    ) {
+        TODO("not implemented") // To change body of created functions use File | Settings | File Templates.
+    }
+
     override fun cancel() {
         TODO("not implemented")
     }

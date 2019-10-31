@@ -1,6 +1,5 @@
 package com.mapbox.navigation.base.route
 
-import com.mapbox.navigation.base.route.model.PointNavigation
 import com.mapbox.navigation.base.route.model.Route
 
 interface DirectionsSession {

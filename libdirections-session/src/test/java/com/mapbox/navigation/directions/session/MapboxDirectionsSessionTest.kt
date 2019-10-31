@@ -31,7 +31,7 @@ class MapboxDirectionsSessionTest {
         every { router.getRoute(origin, waypoints, destination, capture(listener)) } answers {
             routeCallback = listener.captured
         }
-        session = MapboxDirectionsSession(router, origin, waypoints, destination)
+        session = DefaultDirectionsSession(router, origin, waypoints, destination)
     }
 
     @Test

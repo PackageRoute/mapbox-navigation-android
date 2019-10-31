@@ -4,6 +4,7 @@ import com.mapbox.annotation.navigation.module.MapboxNavigationModule
 import com.mapbox.annotation.navigation.module.MapboxNavigationModuleType
 import com.mapbox.geojson.Point
 import com.mapbox.navigation.base.route.Router
+import com.mapbox.navigation.base.route.model.PointNavigation
 import com.mapbox.navigation.base.route.model.Route
 import com.mapbox.navigation.navigator.MapboxNativeNavigator
 
@@ -15,15 +16,6 @@ class MapboxOnboardRouter(private val navigator: MapboxNativeNavigator) : Router
         waypoints: List<Point>?,
         destination: Point,
         callback: Router.RouteCallback
-    ) {
-        TODO("not implemented") // To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun getRoute(
-        origin: Point,
-        waypoints: List<Point>?,
-        destination: Point,
-        listener: Router.RouteListener
     ) {
         TODO("not implemented") // To change body of created functions use File | Settings | File Templates.
     }

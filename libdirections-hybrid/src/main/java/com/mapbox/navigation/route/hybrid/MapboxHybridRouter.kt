@@ -21,9 +21,9 @@ class MapboxHybridRouter(
     }
 
     override fun getRoute(
-        origin: Point,
-        waypoints: List<Point>?,
-        destination: Point,
+        origin: PointNavigation,
+        waypoints: List<PointNavigation>?,
+        destination: PointNavigation,
         listener: Router.RouteListener
     ) {
         TODO("not implemented") // To change body of created functions use File | Settings | File Templates.

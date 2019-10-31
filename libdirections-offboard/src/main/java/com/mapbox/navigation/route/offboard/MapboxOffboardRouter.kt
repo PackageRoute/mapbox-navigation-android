@@ -1,5 +1,6 @@
 package com.mapbox.navigation.route.offboard
 
+import NavigationException
 import android.content.Context
 import com.mapbox.annotation.navigation.module.MapboxNavigationModule
 import com.mapbox.annotation.navigation.module.MapboxNavigationModuleType

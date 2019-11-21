@@ -9,7 +9,7 @@ interface DirectionsSession {
     fun setOrigin(point: Point)
     fun getOrigin(): Point
     fun setWaypoints(points: List<Point>)
-    fun getWaypoints(): List<Point>
+    fun getWaypoints(): List<Point>?
     fun setDestination(point: Point)
     fun getDestination(): Point
 

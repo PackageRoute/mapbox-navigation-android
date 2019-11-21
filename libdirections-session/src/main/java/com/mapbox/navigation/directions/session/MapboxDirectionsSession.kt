@@ -12,7 +12,7 @@ import java.util.concurrent.CopyOnWriteArrayList
 class MapboxDirectionsSession(
     private val router: Router,
     private var origin: Point,
-    private var waypoints: List<Point>?,
+    private var waypoints: List<Point>,
     private var destination: Point,
     routeObserver: DirectionsSession.RouteObserver?
 ) : DirectionsSession {
@@ -69,7 +69,7 @@ class MapboxDirectionsSession(
 
     private fun requestRoute() {
         router.cancel()
-        router.getRoute(origin, emptyList(), destination, object : Router.Callback {
+        router.getRoute(origin, waypoints, destination, object : Router.Callback {
             override fun onRouteReady(routes: List<Route>) {
                 val route = routes.firstOrNull()
                 currentRoute = route

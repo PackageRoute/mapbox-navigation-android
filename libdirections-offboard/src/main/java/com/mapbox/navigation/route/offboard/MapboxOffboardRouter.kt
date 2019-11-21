@@ -32,7 +32,7 @@ class MapboxOffboardRouter(
                 .accessToken(mapboxToken)
                 .origin(origin)
                 .destination(destination)
-            waypoints?.forEach { builder.addWaypoint(it) }
+            waypoints.forEach { builder.addWaypoint(it) }
             navigationRoute = builder.build()
         }
         if (!::routeRetrieveCallback.isInitialized) {

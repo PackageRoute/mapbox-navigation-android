@@ -41,7 +41,7 @@ class MapboxDirectionsSession(
     override fun getOrigin() = origin
 
     override fun setWaypoints(points: List<Point>) {
-        // waypoints = points
+        waypoints = points
         requestRoute()
     }
 

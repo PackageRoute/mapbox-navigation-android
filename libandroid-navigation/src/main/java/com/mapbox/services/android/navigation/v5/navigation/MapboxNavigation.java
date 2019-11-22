@@ -799,11 +799,11 @@ public class MapboxNavigation implements ServiceConnection {
   }
 
   public String retrieveSsmlAnnouncementInstruction(int index) {
-    VoiceInstruction instruction = mapboxNavigator.retrieveVoiceInstruction(index);
-
-    if (instruction != null) {
-      return .getSsmlAnnouncement();
+    if (mapboxNavigator.retrieveVoiceInstruction(index) != null) {
+      return mapboxNavigator.retrieveVoiceInstruction(index).getSsmlAnnouncement();
     }
+
+    return "notFound";
   }
 
   @Override
